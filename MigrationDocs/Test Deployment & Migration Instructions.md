@@ -123,7 +123,7 @@ resources for a test environment, then migrate a test site using the
 
     a.  If the website is not listed attempt to reload the tool
 
-    ![Screen displaying list of web site in migration tool](./media012/image9.PNG)
+    ![Screen displaying list of web site in migration tool](./media012/image9.png)
 
 8.  Select the site you wish to migrate and click **Next**.
 
@@ -134,13 +134,13 @@ resources for a test environment, then migrate a test site using the
     configuration steps required outside of the App Service Migration
     Assistant Tool. For more information see [Azure App Service Migration Readiness Checks.](https://appmigration.microsoft.com/readinesschecks)
 
-    ![Assessment report for 'Default Web Site'](./media012/image10.PNG)
+    ![Assessment report for 'Default Web Site'](./media012/image10.png)
 
 11. Click **next** to proceed.
 
 12. You will now be at the Login to Azure page.
 
-    ![Login to Azure screen](./media012/image11.PNG)
+    ![Login to Azure screen](./media012/image11.png)
 
 13. Click **Copy Code & Open Browser** next to the device code. Then
     click **Next**. This will launch the default a browser window. Due
@@ -178,7 +178,7 @@ resources for a test environment, then migrate a test site using the
 
     d.  Region.
 
-    ![Enter additional information](./media012/image14.png)![Enter additional information 2](./media012/image15.PNG)
+    ![Enter additional information](./media012/image14.png)![Enter additional information 2](./media012/image15.png)
 
 19. The last task on this page is to configure the database. You will
     need to choose between setting up a **hybrid connection** to your
@@ -193,11 +193,11 @@ resources for a test environment, then migrate a test site using the
 22. You will now be in the Migration Progress screen. Note this may take
     some time depending on the size of your site and other factors.
 
-    ![Migration in Progress screen](./media012/image16.PNG)
+    ![Migration in Progress screen](./media012/image16.png)
 
 23. Once the migration completes you will need to setup the hybrid connection. On the **Setup Hybrid Connection Manager** page, click the link to download the MSI for installation.
 
-    ![Setup Hybrid Connection Manager Screeen](./media012/image17.PNG)
+    ![Setup Hybrid Connection Manager Screeen](./media012/image17.png)
 
 24. Once the download completes, run the MSI installer. Click the box to
     accept the license terms then click install. Note: The installer
@@ -206,12 +206,12 @@ resources for a test environment, then migrate a test site using the
 25. Once the Hybrid Connection Manager Completes installation the App
     Service Migration Assistant Tool should report success.
 
-    ![Migration Assistant Tool reports success](./media012/image18.PNG)
+    ![Migration Assistant Tool reports success](./media012/image18.png)
 
 26. Click **Next** to view migration results page.
 
-    ![Click to view migration results page](./media012/image19.PNG)
-    ![Migrated web site](./media012/image20.PNG)
+    ![Click to view migration results page](./media012/image19.png)
+    ![Migrated web site](./media012/image20.png)
 
 27. The migration is now complete. Click **Go to your website**. The migrated site should display.
 

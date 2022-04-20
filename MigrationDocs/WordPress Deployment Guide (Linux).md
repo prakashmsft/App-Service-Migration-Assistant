@@ -59,7 +59,7 @@
 
 15. Enter the credentials you created. Then click **Log In.**
 
-    ![](./media013/image10.PNG)
+    ![](./media013/image10.png)
 
 16. You are now logged in.
 

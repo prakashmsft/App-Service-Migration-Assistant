@@ -16,7 +16,7 @@ with a database to Azure App Service.
 
 The ASP.NET app is displayed in a default browser.
 
-![](./media001/image1.PNG)
+![](./media001/image1.png)
 
 ![](./media001/image2.png)
 
@@ -24,21 +24,21 @@ The app uses a database context to connect with the database. So, the
 database context uses a connection string named ***SchoolContext***. The
 connection string is set in the ***Web.config*** file.
 
-![](./media001/image3.PNG)
+![](./media001/image3.png)
 
 ## **Publish to Azure with SQL Database**
 
 In the **Solution Explorer**, right-click your **ContosoUniversity**
 project and select **Publish**.
 
-![](./media001/image4.PNG)
+![](./media001/image4.png)
 
 ![](./media001/image5.png)
 
 Make sure that **Microsoft Azure App Service** is selected and click
 **Create Profile**.
 
-![](./media001/image6.PNG)
+![](./media001/image6.png)
 
 ## **Sign-in to Azure**
 
@@ -47,7 +47,7 @@ sign into your Azure subscription. If you're already signed into a
 Microsoft account, make sure that account holds your Azure subscription.
 In this case, I've already signed into my Microsoft account.
 
-![](./media001/image7.PNG)
+![](./media001/image7.png)
 
 ## **Configure the web app name**
 
@@ -55,7 +55,7 @@ You can keep the generated web app name or change it to another unique
 name. The web app name is used as part of the default URL for your app
 (`<app_name>.azurewebsites.net`, where `<app_name>` is your web app name).
 
-![](./media001/image8.PNG)
+![](./media001/image8.png)
 
 ## **Create a resource group**
 
@@ -90,7 +90,7 @@ Next to **Hosting Plan**, click **New**.
 
 -   **Size:** S1 (Pricing tiers)
 
-    ![](./media001/image10.PNG)
+    ![](./media001/image10.png)
 
 ## **Create a SQL Server instance**
 
@@ -100,7 +100,7 @@ group.
 
 Click **Create a SQL Database**.
 
-![](./media001/image11.PNG)
+![](./media001/image11.png)
 
 In the **Azure SQL Database** dialog, Click **New** next to **Database
 server**.
@@ -117,9 +117,9 @@ Policy](https://docs.microsoft.com/en-us/sql/relational-databases/security/passw
 Remember this username and password. You need them to manage the logical
 server instance later.
 
-![](./media001/image12.PNG)
+![](./media001/image12.png)
 
-![](./media001/image13.PNG)
+![](./media001/image13.png)
 
 Click **OK**. Don't close the **Azure SQL Database** dialog yet.
 
@@ -135,22 +135,22 @@ In the **Azure SQL Database** dialog:
 
 -   Select **OK**.
 
-![](./media001/image14.PNG)
+![](./media001/image14.png)
 
 The **Create App Service** dialog shows the resources you've configure.
 Click **Create**.
 
-![](./media001/image15.PNG)
+![](./media001/image15.png)
 
 Click **Publish** to deploy your ASP.NET app to Azure App Service.
 
-![](./media001/image16.PNG)
+![](./media001/image16.png)
 
 Once the wizard finishes creating the Azure resources, it publishes your
 web app to Azure. So, your default browser is launched with the URL to
 the deployed app.
 
-![](./media001/image17.PNG)
+![](./media001/image17.png)
 
 Click the **Create New** button which is under the **Students** page to
 add a student name and enrollment date.

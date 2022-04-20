@@ -31,7 +31,7 @@ tool to migrate your PHP application to Azure App Service.
 
 6.  The tool should automatically detect the website and display below.
 
-    ![Tool displays phptestsite](./media010/image3.PNG)
+    ![Tool displays phptestsite](./media010/image3.png)
 
 7.  Select the site you wish to migrate and click **Next**.
 
@@ -46,7 +46,7 @@ tool to migrate your PHP application to Azure App Service.
 
 11. You will now be at the **Login to Azure** page.
 
-    ![Azure log in screen](./media010/image5.PNG)
+    ![Azure log in screen](./media010/image5.png)
 
 12. Click **Copy Code & Open Browser** next to the device code. Then click **Next**. This will launch the default browser window. Once this is completed, you should see a page like the one below.
 
@@ -72,7 +72,7 @@ tool to migrate your PHP application to Azure App Service.
 
     d.  Region.
 
-    ![Screen to fill in above mentioned information](./media010/image8.PNG)
+    ![Screen to fill in above mentioned information](./media010/image8.png)
 
 18. The last task on this page is to configure the database. You will need to choose between setting up a hybrid connection to your on-premises database or skipping the database setup for now. We are choosing to **skip database setup** during this time because a simple PHP website doesn't contain any database.
 
@@ -80,11 +80,11 @@ tool to migrate your PHP application to Azure App Service.
 
 20. You will now be in the Migration Progress screen. Note this may take some time depending on the size of your site and other factors.
 
-    ![Migration progress screen](./media010/image9.PNG)
+    ![Migration progress screen](./media010/image9.png)
 
 21. Once the migration completes, the App Service Migration Assistant tool should report the migration results "Congratulations, your site has been successfully migrated!".
 
-    ![Congratulations, your site has been successfully migrated!](./media010/image10.PNG)
+    ![Congratulations, your site has been successfully migrated!](./media010/image10.png)
 
 22. The migration process is completed. Click **Go to your website**. The migrated site should display.
 

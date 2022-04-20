@@ -30,11 +30,11 @@ This document provides an overview of the resources available to help ease the o
 
 If you have not yet deployed to Azure App Service, use the links below to build a new app or migrate an existing app.
 
-![Build a new app or migrate an existing app](./media003/image1.PNG)
+![Build a new app or migrate an existing app](./media003/image1.png)
 
 *\*Note: You can create a custom container by using your code then specifying this image when creating the web app for containers.*
 
-![Deploy a new app or migrate an existing app](./media003/image2.PNG)
+![Deploy a new app or migrate an existing app](./media003/image2.png)
 
 ### **1.2 How to connect a database**
 

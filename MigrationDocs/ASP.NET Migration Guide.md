@@ -33,7 +33,7 @@ tool to migrate your web app to Azure App Service.
 
 6.  The tool should automatically detect the website and display below.
 
-    ![](./media002/image2.PNG)
+    ![](./media002/image2.png)
 
 7.  Select the site you wish to migrate and click **Next**.
 
@@ -47,7 +47,7 @@ tool to migrate your web app to Azure App Service.
 
 11. You will now be at the **Login to Azure** page.
 
-    ![Login to Azure](./media002/image4.PNG)
+    ![Login to Azure](./media002/image4.png)
 
 12. Click **Copy Code & Open Browser** next to the device code. Then click **Next**. This will launch the default browser window. Once this is completed, you should see a page like the one below.
 
@@ -75,7 +75,7 @@ tool to migrate your web app to Azure App Service.
 
     ![](./media002/image7.png)
 
-    ![](./media002/image8.PNG)
+    ![](./media002/image8.png)
 
 18. The last task on this page is to configure the database. You will need to choose between setting up a **hybrid connection** to your on-premises database or skipping the database setup for now. We are choosing to setup the hybrid connection to our on-premises database.
 
@@ -85,17 +85,17 @@ tool to migrate your web app to Azure App Service.
 
 21. You will now be in the Migration Progress screen. Note this may take some time depending on the size of your site and other factors.
 
-    ![](./media002/image9.PNG)
+    ![](./media002/image9.png)
 
 22. Once the migration completes you will need to setup the hybrid connection. On the **Setup Hybrid Connection Manager** page, click the link to download the MSI for installation.
 
-    ![](./media002/image10.PNG)
+    ![](./media002/image10.png)
 
 23. Once the download completes, run the MSI installer. Click the box to accept the license terms then click install. Note: The installer will now complete without any further configuration actions needed.
 
 24. Once the Hybrid Connection Manager installation completes, the App Service Migration Assistant tool should report "Successfully configured Hybrid Connection Manager".
 
-    ![](./media002/image11.PNG)
+    ![](./media002/image11.png)
 
 25. Click **Next** to view the Migration Results page.
 
