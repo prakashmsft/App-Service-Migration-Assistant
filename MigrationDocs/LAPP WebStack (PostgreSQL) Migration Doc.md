@@ -29,12 +29,12 @@
 
 2.  In the Cloud Shell, create an App Service plan with the following command
 
-    ```azure-cli
+    ```powershell
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux
     ```
     -   The following example creates a Linux App Service plan named lappdestination in the B1 tier.
 
-        ```azure-cli
+        ```powershell
         az appservice plan create --name lappdestination --resource-group lappdestination --sku B1 --is-linux
         ```
 
@@ -49,12 +49,12 @@
 
     1.  In the Cloud Shell enter the following command. This creates an app service called lappdestination and sets the runtime to PHP 7.2.
 
-        ```azure-cli
+        ```powershell
         az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app-name> --runtime "PHP|7.2"
         ```
 
     -   Example:
-        ```azure-cli
+        ```powershell
         az webapp create --resource-group lappdestination --plan lappdestination --name lappdestination --runtime "PHP|7.2" 
         ```
 
@@ -91,12 +91,12 @@
 
 2.  To back up an existing PostgreSQL database on-premises or in a VM, run the following command:
 
-    ```azure-cli
+    ```powershell
     pg_dump -Fc -v --host=<host> --username=<name> --dbname=<database name> > <database>.dump
     ```
 
     b.  Example with localhost: 
-    ```azure-cli
+    ```powershell
     pg_dump -h localhost -U postgres -Fc -d lappdb > lappdbbackup.dump
     ```
 
@@ -132,12 +132,12 @@
 6.  While still on the source PostgreSQL server run the following
     command to connect remotely to your Azure instance. **Host** will be your full **Server name**, and **Username** will be the **Server admin login name**. (Note that the **dbname** will usually need to be set to **postgres**. An existing database must be specified and this one is normally created by default.)
 
-    ```azure-cli
+    ```powershell
     psql --host=<yourserver> --port=<port> --username=<server admin login> --dbname=postgres
     ```
 
     Example: 
-    ```azure-cli
+    ```powershell
     psql --host=lappdestinationpgsql.postgres.database.azure.com --port=5432 --username=sysadmin@lappdestinationpgsql --dbname=postgres
     ```
 
@@ -160,12 +160,12 @@
 
 1.  Run the following command to restore the database.
 
-    ```azure-cli
+    ```powershell
     pg_restore -v --no-owner –-host=<server name> --port=<port> --username=<user@servername> --dbname=<target database name> <database>.dump
     ```
 
-    -  Example:
-    ```azure-cli
+    **Example**:
+    ```powershell
     pg_restore -v --no-owner --host=lappdestinationpgsql.postgres.database.azure.com --port=5432 --username=sysadmin@lappdestinationpgsql --dbname=lappdb lappdbbackup.dump
     ```
 

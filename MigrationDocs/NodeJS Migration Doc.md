@@ -29,13 +29,13 @@
 
     2.  In the Cloud Shell create a resource group with the following command.
 
-        ```azure-cli
+        ```powershell
         az group create --name myResourceGroup --location "West Europe"
         ```
 
     3.  create an App Service plan with the following command.
 
-        ```azure-cli
+        ```powershell
         az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux
         ```
 
@@ -51,7 +51,7 @@
         run [az webapp list-runtimes
         \--linux](https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest).
 
-        ```azure-cli
+        ```powershell
         az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app-name> --runtime "NODE|6.9" --deployment-local-git 
         ```
 
@@ -71,7 +71,7 @@
         hyphen (-) character, and must be between 3 and 50 characters
         long.
 
-        ```azure-cli
+        ```powershell
         az cosmosdb create --name <cosmosdb-name> --resource-group myResourceGroup --kind MongoDB 
         ```
 
@@ -91,7 +91,7 @@
 -   **Retrieve the database key -** To connect to the Cosmos DB
     database, you need the database key. In the Cloud Shell, use the `az cosmosdb list-keys` command to retrieve the primary key.
 
-    ```azure-cli
+    ```powershell
     az cosmosdb list-keys --name <cosmosdb-name>
     ```
 
@@ -110,7 +110,7 @@
 
     15. The following example configures a MONGODB_URI app setting in your Azure app. Replace the `<app-name>`, `<cosmosdb-name>`, `<primary-master-key>`, and `<CollectionName>` placeholders.
 
-        ```azure-cli
+        ```powershell
         az webapp config appsettings set --name <app-name> --resource-group myResourceGroup --settings MONGODB_URI="mongodb://<cosmosdb-name>:<primary-master-key>@<cosmosdb-name>.documents.azure.com:10250/<CollectionName>?ssl=true"
         ```
 
@@ -125,7 +125,7 @@
 
     18. Add an Azure remote to your local Git repository. Replace `<deploymentLocalGitUrl-from-create-step>` with the URI
 
-        ```azure-cli
+        ```powershell
         git remote add azure <deploymentLocalGitUrl-from-create-step>
         ```
 

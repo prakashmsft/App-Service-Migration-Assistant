@@ -121,11 +121,9 @@ For a more exhaustive list of WordPress optimizations see documentation at [Word
 
 We performed testing with P1V2 (Base Production App Service Plan) with 1vCore Azure Database for MySQL (Base MySQL instance). A max simultaneous user count of 170 was established. We used this to calculate a max monthly load below. You will need to adjust the numbers based on your business case.
 
--------------------------------------------------------------------------
 | **Test Configuration**            | **Value**                         |
 |-----------------------------------|-----------------------------------|
 | User Duration                     | 10 Minutes 6 sessions per hour (6 X 170) = 1,020 |
 | Business Hours                    | 12 Hours per day (12 X 1020) = 12,240 |
 | Peak Usage Adjustment             | Assuming a margin of 3x over baseline for peak burst. 12,240 / 3 = 4,080 |
 | Monthly Projection                | (30 x 4,080) = 122,400 average monthly users |
--------------------------------------------------------------------------

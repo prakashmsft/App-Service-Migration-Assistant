@@ -215,4 +215,3 @@ resources for a test environment, then migrate a test site using the
 
 27. The migration is now complete. Click **Go to your website**. The migrated site should display.
 
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*

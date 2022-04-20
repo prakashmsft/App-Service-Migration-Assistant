@@ -90,4 +90,3 @@ tool to migrate your PHP application to Azure App Service.
 
     ![Click Go to your website](./media010/image11.png)
 
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*

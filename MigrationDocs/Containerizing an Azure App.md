@@ -26,13 +26,11 @@ To complete this tutorial:
 -   Enable the following PHP extensions Laravel needs: OpenSSL,
     PDO-MySQL, Mbstring, Tokenizer, XML
 
--   [Install and start
-    MySQL](https://dev.mysql.com/doc/refman/5.7/en/installing.html)
+-   [Install and start MySQL](https://dev.mysql.com/doc/refman/5.7/en/installing.html)
 
 -   A workstation with Docker installed and Visual Studio Code with Docker Extension.
 
--   [An Azure container
-    registry.](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal)
+-   [An Azure container registry.](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal)
 
 ## **Prepare local MySQL**
 
@@ -87,7 +85,7 @@ In the terminal window, cd to a working directory.
     *\<root_password\>* placeholder with the MySQL root user\'s
     password.
 
-    ```js
+    ```ini
     APP_ENV=local
     APP_DEBUG=true
     APP_KEY=SomeRandomString
@@ -137,21 +135,19 @@ Follow these steps to create an Azure Database for MySQL server:
 
     ![](./media005/image3.png "Create server form")
 
-  -----------------------------------------------------------------------
-  |**Setting**            | **Suggested value**    | **Field description**|
-  |-----------------------|-----------------------|-----------------------|
-  |Server name            | Unique server name     | Enter a unique name that identifies your Azure Database for MySQL server.|
-  |Subscription           | Your subscription      | Select the Azure subscription that you want to use for your server.|
-  |Resource group         | *myresourcegroup*      | Provide a new or existing resource group name.|
-  |Select source          | *Blank*                | Select *Blank* to create a new server from scratch.|
-  |Server admin login     | myadmin                | A sign-in account to use when you\'re connecting to the server. The admin sign-in name cannot be **azure_superuser**, **admin**, **administrator**, **root**, **guest**, or **public**.|
-  |Password               | *Your choice*          | Provide a new password for the server admin account. It must contain from 8 to 128 characters.|
-  |Confirm password       | *Your choice*          | Confirm the admin account password.|
-  |Location               | *The region closest to your users* | Choose the location that is closest to your users or your other Azure applications.|
-  |Version                | *The latest major version* | The latest major version (unless you have specific requirements that require another version).|
-  |Pricing tier           | **General Purpose**, **Gen 5**, **2 vCores**, **5 GB**, **7 days**, **Geographically Redundant**            | The compute, storage, and backup configurations for your new server. Select **Pricing tier**. Next, select the **General Purpose** tab. *Gen 5*, *4 vCores*, *100 GB*, and *7 days* are the default values for **Compute Generation**, **vCore**, **Storage**, and **Backup Retention Period**. You can leave those sliders as is.|
-  -----------------------------------------------------------------------
-\
+    |**Setting**            | **Suggested value**    | **Field description**|
+    |-----------------------|-----------------------|-----------------------|
+    |Server name            | Unique server name     | Enter a unique name that identifies your Azure Database for MySQL server.|
+    |Subscription           | Your subscription      | Select the Azure subscription that you want to use for your server.|
+    |Resource group         | *myresourcegroup*      | Provide a new or existing resource group name.|
+    |Select source          | *Blank*                | Select *Blank* to create a new server from scratch.|
+    |Server admin login     | myadmin                | A sign-in account to use when you\'re connecting to the server. The admin sign-in name cannot be **azure_superuser**, **admin**, **administrator**, **root**, **guest**, or **public**.|
+    |Password               | *Your choice*          | Provide a new password for the server admin account. It must contain from 8 to 128 characters.|
+    |Confirm password       | *Your choice*          | Confirm the admin account password.|
+    |Location               | *The region closest to your users* | Choose the location that is closest to your users or your other Azure applications.|
+    |Version                | *The latest major version* | The latest major version (unless you have specific requirements that require another version).|
+    |Pricing tier           | **General Purpose**, **Gen 5**, **2 vCores**, **5 GB**, **7 days**, **Geographically Redundant**            | The compute, storage, and backup configurations for your new server. Select **Pricing tier**. Next, select the **General Purpose** tab. *Gen 5*, *4 vCores*, *100 GB*, and *7 days* are the default values for **Compute Generation**, **vCore**, **Storage**, and **Backup Retention Period**. You can leave those sliders as is.|
+
     ![](./media005/image4.png "Create server - pricing tier window")
 
 4.  Select **Create** to provision the server. Provisioning can take up to 20 minutes.
@@ -187,7 +183,7 @@ Follow these steps to create an Azure Database for MySQL server:
 
     For example, to back up a database named \'sampleDB\' on your MySQL server with the username \'testuser\' and with no password to a file sampleDB \_backup.sql, use the following command. The command backs up the testdb database into a file called sampleDB \_backup.sql, which contains all the SQL statements needed to re-create the database.
 
-    ```azure-cli
+    ```shell
     $ mysqldump -u root -p sampleDB > sampleDB_backup.sql
     ```
 

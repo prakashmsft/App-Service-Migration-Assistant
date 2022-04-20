@@ -168,4 +168,3 @@ running live in Azure App Service.
 -   [[Buy a custom domain name for Azure App
     Service]](https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain)
 
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
